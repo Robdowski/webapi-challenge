@@ -11,4 +11,7 @@ server.use(express.json())
 const projectRouter = require('./router/projectRouter')
 server.use('/api/projects', projectRouter)
 
+const actionRouter = require('./router/actionRouter')
+server.use('/api/actions', actionRouter)
+
 module.exports = server
